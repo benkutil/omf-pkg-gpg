@@ -15,7 +15,7 @@ if test -f ~/.gnupg/.gpg-agent-info
     gpg-connect-agent /bye ^/dev/null
     if test $status -eq 1
         pkill -U $USER gpg-agent
-        gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-infso >/dev/null
+        gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info >/dev/null
         __refresh_gpg_agent_info
     end
 end
